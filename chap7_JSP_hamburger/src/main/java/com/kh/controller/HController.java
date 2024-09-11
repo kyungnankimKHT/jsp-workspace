@@ -26,7 +26,7 @@ public class HController {
 	@PostMapping("/api/add")
 	public String addHamburger(Hamburger h) {
 		hServcie.saveHamburger(h);
-		return "redirect:/hambugerList";
+		return "redirect:/api/all"; //redirect  다시 불러올 api주소를 작성
 	}
 }
 
